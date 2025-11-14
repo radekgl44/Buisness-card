@@ -1,0 +1,245 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+header nav {
+    background-color: white;
+    width: 100vw;
+    height: 150px;
+    left: 2vw;
+    position: relative;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+header nav a {
+    color: #a7a6a6;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 110px;
+    position: relative;
+}
+
+header nav a::after {
+    content: '';
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.2s;
+}
+
+header nav a:hover {
+    transform: scale(1.3);
+    transition: 0.4s;
+    
+}
+
+header nav a:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+#Home {
+    color: black;
+    font-weight: bold;
+}
+
+#Contact {
+    color: black;
+    font-weight: bold;
+}
+
+.mainimg {
+    background-image: url('img/bg.png');
+    width: 100vw;
+    height: 45vh;
+    filter: blur(1px);
+    clip-path: inset(1px);
+    z-index: 1;
+}
+.Buisnesscard {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: black 0 10px 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    position: relative;
+    width: 305px;
+    height: 512px;
+}
+
+#ProfileBG {
+    position: absolute;
+    top: 10%;
+    right: 77%;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px);
+    z-index: 1;
+    clip-path: inset(5px);
+}
+
+#Profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid black;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    right: 63%;
+    transform: translate(-45%, -55%);
+    z-index: 2;
+}
+
+.Contact {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+    left: 100px;
+    top: 50px;
+    position: relative;
+}
+
+.Name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    left: 105px;
+    bottom: 5px;
+    color: #a7a6a6;
+    position: relative;
+}
+
+hr {
+    width: 355px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 10px auto;
+    left: 104px;
+    top: 15px;
+    position: relative;
+}
+
+#Role {
+    left: -70px;
+    top: 50px;
+    position: relative;
+}
+
+.Role {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    left: 180px;
+    bottom: 20px;
+    position: relative;
+}
+
+
+
+#Tele {
+    left: -65px;
+    top: 50px;
+    position: relative;
+}
+
+.Tele {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    left: 180px;
+    bottom: 60px;
+    position: relative;
+}
+
+#Email {
+    left: -65px;
+    top: 50px;
+    position: relative;
+}
+
+.Email {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    left: 180px;
+    bottom: 100px;
+    position: relative;
+}
+
+footer {
+    background-color: #363636;
+    width: 100%;
+    height: 300px;
+    top: 550px;
+    position: relative;
+}
+
+footer {
+    background-color: #363636;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    transform: scale(1.2);
+}
+
+.socials {
+    margin-bottom: 15px;
+}
+
+.socials a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.contact-info p {
+    margin: 4px 0;
+    color: white;
+    font-size: 16px;
+}
+
+.content {
+    width: 1300px;
+    height: 1000px;
+    background-color: #fff;
+    left: 15vw;
+    bottom: 25vh;
+    position: relative;
+    box-shadow: 0 0 20px;
+}
